@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- onsen framework -->
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <!-- end onsen framework -->
+    <title>Best Budget App</title>
+</head>
+
+
+<body>
+    
+    <!-- Page begins -->
+    <ons-page>
+    <!-- toolbar/title -->
+    <ons-toolbar class="toolbar">
+        <div class="center toolbar_center">Budget app</div>
+    </ons-toolbar>
+    <!-- end toolbar/title -->
+    <!-- input fields -->
+    <ons-input id="SetBud"
+    modifier="material underbar"
+    type="number"
+    placeholder="set your budget"
+    min="0">
+    
+    </ons-input>
+
+    <br>
+    
+    <ons-button modifier="large">Set Budget</ons-button>
+    <!-- output field for set budget, total expenses, and remaining budget -->
+    <div id="outfield_icons" style="display: flex;
+     justify-content: space-around; padding: 5%;">
+        <div><span class="material-icons md-48">savings</span></div>
+        <div><span class="material-icons md-48">money_off</span></div>
+        <div><span class="material-icons md-48">monetization_on</span></div>
+    </div>
+    <div id="outfield" style="display: flex;
+     justify-content: space-around; padding: 2%;">
+        <div>Budget</div>
+        <div>Expenses</div>
+        <div>leftover</div>
+    </div>
+    <!-- End output field for set budget, total expenses, and remaining budget -->
+
+    <ons-input id="setExpDescription"
+    modifier="material underbar"
+    type="text"
+    placeholder="Expense description">
+    </ons-input>
+    <br>
+
+    <ons-input id="setExpAmount"
+    modifier="material underbar"
+    type="number"
+    placeholder="Expense amount">
+    </ons-input>
+
+    <!-- end input fields -->
+
+    <!-- display expenses -->
+    <div>
+        <h1>This is where the expense descriptions go.</h1>
+    </div>
+    <div id="expensesOut" style="display: flex;
+     justify-content: space-around;">
+        <div>Description</div>
+        <div>Amount</div>
+    </div>
+    <!-- end display expenses -->
+
+    </ons-page>
+    <!-- end page -->
+</body>
