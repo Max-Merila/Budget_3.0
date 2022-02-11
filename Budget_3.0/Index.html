@@ -26,17 +26,19 @@
     </ons-toolbar>
     <!-- end toolbar/title -->
     <!-- input fields -->
-    <ons-input id="SetBud"
+    <ons-input id="setBudget"
     modifier="material underbar"
     type="number"
     placeholder="set your budget"
     min="0">
-    
     </ons-input>
+    <!-- end input fields -->
 
     <br>
-    
-    <ons-button modifier="large">Set Budget</ons-button>
+    <!-- Set Budget Button -->
+    <ons-button modifier="large" id="budgetSave">Set Budget</ons-button>
+    <!-- end Set Budget Button -->
+
     <!-- output field for set budget, total expenses, and remaining budget -->
     <div id="outfield_icons" style="display: flex;
      justify-content: space-around; padding: 5%;">
@@ -46,9 +48,9 @@
     </div>
     <div id="outfield" style="display: flex;
      justify-content: space-around; padding: 2%;">
-        <div>Budget</div>
-        <div>Expenses</div>
-        <div>leftover</div>
+        <div id="budgetOut">Budget</div>
+        <div id="expensesOut">Expenses</div>
+        <div id="remainderOut">leftover</div>
     </div>
     <!-- End output field for set budget, total expenses, and remaining budget -->
 
@@ -71,7 +73,7 @@
     <div>
         <h1>This is where the expense descriptions go.</h1>
     </div>
-    <div id="expensesOut" style="display: flex;
+    <div id="displayOut" style="display: flex;
      justify-content: space-around;">
         <div>Description</div>
         <div>Amount</div>
@@ -80,4 +82,5 @@
 
     </ons-page>
     <!-- end page -->
+    <script src="budget.js"></script>
 </body>
