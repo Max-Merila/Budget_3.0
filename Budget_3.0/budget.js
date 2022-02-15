@@ -18,7 +18,8 @@ budgetSave.onclick = function() {
 expenseSave.onclick = function() {
     const description = setExpDescription.value;
     const amount = setExpAmount.value;
-    let out = '<div>';
-    out += description + '</div>' + '<div>' + amount + '</div>'
-    displayOut.innerHTML = displayOut.innerHTML += out;
+    let descriptionout = '<br>' + description;
+    let amountout = '<br>' + amount;
+    descriptionOut.innerHTML = descriptionOut.innerHTML += descriptionout;
+    amountOut.innerHTML = amountOut.innerHTML += amountout;
 }
