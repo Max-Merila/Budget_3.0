@@ -22,9 +22,10 @@ expenseSave.onclick = function() {
     let amountout = '<br>' + amount;
     descriptionOut.innerHTML = descriptionOut.innerHTML += descriptionout;
     amountOut.innerHTML = amountOut.innerHTML += amountout;
+    expensesOut.innerHTML += amount;
 }
 
-expenseSave.onclick = function() {
-    const ExpensesOut = setExpAmount.value;
-    expensesOut.innerHTML = ExpensesOut;
-}
+// expenseSave.onclick = function() {
+//     const ExpensesOut = setExpAmount.value;
+//     expensesOut.innerHTML = ExpensesOut;
+// }
