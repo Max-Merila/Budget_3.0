@@ -23,3 +23,8 @@ expenseSave.onclick = function() {
     descriptionOut.innerHTML = descriptionOut.innerHTML += descriptionout;
     amountOut.innerHTML = amountOut.innerHTML += amountout;
 }
+
+expenseSave.onclick = function() {
+    const ExpensesOut = setExpAmount.value;
+    expensesOut.innerHTML = ExpensesOut;
+}
